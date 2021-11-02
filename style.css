@@ -34,22 +34,27 @@ nav{
     justify-content: space-between;
 }
 main{
- 
     background-color: var(--middle-light);
     color: var(--dark-color);
+    padding-bottom: 3rem;
 }
 .navbar{
     background-color: var(--dark-middle);
 }
 .navbar a{
     font-size: 1.4rem;
+    font-weight: bold;
     color:var(--middle-light);
-    margin:  auto 1rem auto 1rem;
+    margin:  auto 2rem;
+}
+.workshoplist{
+    display: inline-flex;
 }
 .main__title{
     text-align: center;
     text-transform: uppercase;
     color: var(--dark-color);
+    padding: 3rem;
 }
 .main__subtitle{
     text-align: center;
@@ -81,6 +86,13 @@ main{
     transform: scale(1.2);
    
 }
+.item__title{
+    font-size: 1.6rem;
+}
+.item__description{
+    width: 150px;
+    font-size: 1.2rem;
+}
 .item__button{
     display: flex;
     align-items: center;
@@ -89,6 +101,7 @@ main{
     height: 40px;
     font-size: 1.2rem;
     font-weight:bold;
+    text-transform: uppercase;
     border-radius: 20px;
     color: var(--middle-light);
     background-color: var(--dark-color);
@@ -98,7 +111,9 @@ main{
     height: 100px;
 }
 footer{
+    height: 6rem;
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -108,7 +123,32 @@ footer{
     background-color: var(--highligth-color);
 }
 .github-icon{
+    font-size: 1.4rem;
     color: var(--middle-light);
+}
+.main__figures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__figures figure{
+    margin-top: 2rem;
+}
+.calculator__container{
+    display: flex;
+    flex-direction: column;
+}
+.calculate-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 354px;
+    border-radius: 50px;
+    box-shadow: 5px 12px 18px 0px rgba(90,90,90,0.3);
+    -webkit-box-shadow: 5px 12px 18px 0px rgba(90,90,90,0.3);
+    -moz-box-shadow: 5px 12px 18px 0px rgba(90,90,90,0.3);
+    margin: 4rem 1rem 1rem 4rem;
 }
 @media (min-width:768px){
     nav{
@@ -126,4 +166,17 @@ footer{
         overscroll-behavior-x: contain;
         scroll-snap-type: x proximity;
         }
+    .main__subtitle {
+        font-size: 1.6rem;
+    }
+    .item__title{
+        font-size: 1.8rem;
+      }
+    .item__description{
+        font-size: 1.4rem;
+     }
+     .calculator__container{
+        flex-direction: row;
+        width: 100%;
+    }
 }
